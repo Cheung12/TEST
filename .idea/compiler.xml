@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="calling-storedprocedures" />
+        <module name="configuring-and-using-jdbctemplate" />
+        <module name="configuring-datasource" />
+        <module name="configuring-single-conn-datasource" />
+        <module name="embedded-db-support" />
+        <module name="encapsulating-dml-operations" />
+        <module name="encapsulating-sql-queries" />
+        <module name="encapsulating-storedprocedures" />
+        <module name="handling-lob-objects" />
+        <module name="initializing-db" />
+        <module name="inserting-updating-deleting-records" />
+        <module name="performing-batch-operations" />
+        <module name="pooled-datasource" />
+        <module name="queries-with-in-clause" />
+        <module name="running-queries-with-jdbctemplate" />
+        <module name="using-named-parameters" />
+        <module name="using-preparedstatements" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="calling-storedprocedures" target="1.8" />
+      <module name="configuring-and-using-jdbctemplate" target="1.8" />
+      <module name="configuring-datasource" target="1.8" />
+      <module name="configuring-single-conn-datasource" target="1.8" />
+      <module name="embedded-db-support" target="1.8" />
+      <module name="encapsulating-dml-operations" target="1.8" />
+      <module name="encapsulating-sql-queries" target="1.8" />
+      <module name="encapsulating-storedprocedures" target="1.8" />
+      <module name="handling-lob-objects" target="1.8" />
+      <module name="initializing-db" target="1.8" />
+      <module name="inserting-updating-deleting-records" target="1.8" />
+      <module name="performing-batch-operations" target="1.8" />
+      <module name="pooled-datasource" target="1.8" />
+      <module name="queries-with-in-clause" target="1.8" />
+      <module name="running-queries-with-jdbctemplate" target="1.8" />
+      <module name="spring-book-ch4" target="1.8" />
+      <module name="using-named-parameters" target="1.8" />
+      <module name="using-preparedstatements" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

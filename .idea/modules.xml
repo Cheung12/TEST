@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/calling-storedprocedures/calling-storedprocedures.iml" filepath="$PROJECT_DIR$/calling-storedprocedures/calling-storedprocedures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configuring-and-using-jdbctemplate/configuring-and-using-jdbctemplate.iml" filepath="$PROJECT_DIR$/configuring-and-using-jdbctemplate/configuring-and-using-jdbctemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configuring-datasource/configuring-datasource.iml" filepath="$PROJECT_DIR$/configuring-datasource/configuring-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configuring-single-conn-datasource/configuring-single-conn-datasource.iml" filepath="$PROJECT_DIR$/configuring-single-conn-datasource/configuring-single-conn-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/embedded-db-support/embedded-db-support.iml" filepath="$PROJECT_DIR$/embedded-db-support/embedded-db-support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encapsulating-dml-operations/encapsulating-dml-operations.iml" filepath="$PROJECT_DIR$/encapsulating-dml-operations/encapsulating-dml-operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encapsulating-sql-queries/encapsulating-sql-queries.iml" filepath="$PROJECT_DIR$/encapsulating-sql-queries/encapsulating-sql-queries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encapsulating-storedprocedures/encapsulating-storedprocedures.iml" filepath="$PROJECT_DIR$/encapsulating-storedprocedures/encapsulating-storedprocedures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handling-lob-objects/handling-lob-objects.iml" filepath="$PROJECT_DIR$/handling-lob-objects/handling-lob-objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/initializing-db/initializing-db.iml" filepath="$PROJECT_DIR$/initializing-db/initializing-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inserting-updating-deleting-records/inserting-updating-deleting-records.iml" filepath="$PROJECT_DIR$/inserting-updating-deleting-records/inserting-updating-deleting-records.iml" />
+      <module fileurl="file://$PROJECT_DIR$/performing-batch-operations/performing-batch-operations.iml" filepath="$PROJECT_DIR$/performing-batch-operations/performing-batch-operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pooled-datasource/pooled-datasource.iml" filepath="$PROJECT_DIR$/pooled-datasource/pooled-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/queries-with-in-clause/queries-with-in-clause.iml" filepath="$PROJECT_DIR$/queries-with-in-clause/queries-with-in-clause.iml" />
+      <module fileurl="file://$PROJECT_DIR$/running-queries-with-jdbctemplate/running-queries-with-jdbctemplate.iml" filepath="$PROJECT_DIR$/running-queries-with-jdbctemplate/running-queries-with-jdbctemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-book-ch4.iml" filepath="$PROJECT_DIR$/spring-book-ch4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/using-named-parameters/using-named-parameters.iml" filepath="$PROJECT_DIR$/using-named-parameters/using-named-parameters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/using-preparedstatements/using-preparedstatements.iml" filepath="$PROJECT_DIR$/using-preparedstatements/using-preparedstatements.iml" />
+    </modules>
+  </component>
+</project>
