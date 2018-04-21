@@ -1,41 +1,34 @@
 package com.wiley.beginningspring.ch4;
 
 import java.sql.SQLException;
-import java.sql.Types;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.SingleColumnRowMapper;
-import org.springframework.jdbc.core.SqlParameter;
-import org.springframework.jdbc.core.simple.SimpleJdbcCall;
+
 
 public class Main {
 	public static void main(String[] args) throws SQLException {
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Ch4Configuration.class);
-			
+
 		JdbcTemplate jdbcTemplate = applicationContext.getBean(JdbcTemplate.class);
 
-		AccountDao accountDao=new AccountDaoJdbcImpl();
+
+		AccountDao accountDao=applicationContext.getBean(AccountDao.class);
 
 		Date currentTime = new Date();
-		    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		    String dateString = formatter.format(currentTime);
-		    ParsePosition pos = new ParsePosition(8);
-		    Date currentTime_2 = formatter.parse(dateString, pos);
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String dateString = formatter.format(currentTime);
+		ParsePosition pos = new ParsePosition(8);
+		Date currentTime_2 = formatter.parse(dateString, pos);
 		    //return currentTime_2;
 		Account account=new Account();
-		account.setAccessTime(currentTime_2);
+		account.setAccessTime(currentTime);
 		account.setBalance(100);
 		account.setLocked(true);
 		account.setOwnerName("zhang");
-
-
 		accountDao.insert(account);
 //		SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate);
 //
