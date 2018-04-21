@@ -28,10 +28,12 @@ public class AccountDaoJdbcImpl implements AccountDao {
 	}
 
 	public void insert(Account account) {
-		PreparedStatementCreatorFactory psCreatorFactory = new PreparedStatementCreatorFactory(
-				"insert into account(owner_name,balance,access_time,locked) values(?,?,?,?)",
-				new int[] { Types.VARCHAR, Types.DOUBLE, Types.DATE,
-						Types.BOOLEAN });
+//		PreparedStatementCreatorFactory psCreatorFactory = new PreparedStatementCreatorFactory(
+//				"insert into account(owner_name,balance,access_time,locked) values(?,?,?,?)",
+//				new int[] { Types.VARCHAR, Types.DOUBLE, Types.DATE,
+//						Types.BOOLEAN });
+
+		jdbcTemplate.update("insert into account(owner_name,balance,access_time,locked) values(?,?,?,?)",account);
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 //		int count = jdbcTemplate.update(
 //				psCreatorFactory.newPreparedStatementCreator(new Object[] {
