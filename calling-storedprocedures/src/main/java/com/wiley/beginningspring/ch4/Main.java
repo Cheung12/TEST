@@ -28,6 +28,7 @@ public class Main {
 		account.setAccessTime(currentTime);
 		account.setBalance(100);
 		account.setLocked(true);
+
 		account.setOwnerName("zhang");
 		accountDao.insert(account);
 //		SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate);
