@@ -1,5 +1,6 @@
 package com.wiley.beginningspring.ch4;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
@@ -8,12 +9,16 @@ import java.util.Date;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import javax.sql.DataSource;
+
 
 public class Main {
 	public static void main(String[] args) throws SQLException {
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Ch4Configuration.class);
+		DataSource dataSource = applicationContext.getBean("dataSource", DataSource.class);
 
-		JdbcTemplate jdbcTemplate = applicationContext.getBean(JdbcTemplate.class);
+		Connection connection = dataSource.getConnection();
+		//JdbcTemplate jdbcTemplate = applicationContext.getBean(JdbcTemplate.class);
 
 
 		AccountDao accountDao=applicationContext.getBean(AccountDao.class);

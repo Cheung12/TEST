@@ -7,9 +7,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
+import java.io.Serializable;
+
 @Configuration
 
-public class Ch4Configuration {
+public class Ch4Configuration implements Serializable {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
